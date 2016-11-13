@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- 	Group Project
+		Student Names: Yoonkwan Kim, Jody Kirton, Nicole Serrao
+-->
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Group Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="_css/jquery.mobile.css">
+	<link rel="stylesheet" href="_css/mystyles.css">	
+	<script src="_js/jquery.js"></script>
+	<script src="_js/jquery.mobile.js"></script>
+	<script src="_js/myscript.js"></script>
+</head>
+<body>
+	<!-- Start main page -->
+	<div data-role="page" id="main" data-theme="a">
+		<header data-role="header" id="header">
+			<h1>Name of our site</h1>
+		</header>
+
+		<section class="ui-content" role="main">
+			<div role="main" class="ui-content">			
+			</div>
+		</section>
+		
+		<footer data-role="footer">		
+			<div data-role="navbar" id="navhome" class="ui-navbar">
+			    <ul>  
+				  <li><a href="#memberPopup" class="ui-btn ui-icon-about ui-btn-icon-left" value="kwan">Kwan's Picture</a></li> 
+				  <li><a href="#memberPopup" class="ui-btn ui-icon-sheridan ui-btn-icon-left" value="jody">Jody's Picture</a></li>
+				  <li><a href="#memberPopup" class="ui-btn ui-icon-ago ui-btn-icon-left" value="nicole">Nicole's Picture</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<!-- End main page -->
+	
+	<!-- Start member popup page-->
+	<div data-role="page" id="memberPopup">
+		<div data-role="header" data-theme="b">
+			<h1>Name of our site</h1>
+		</div>
+		<div class="ui-content" role="main" data-theme="b">	
+			<p id="memberInfo"></p>		
+			<p><a data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-top">Back to page</a></p>	
+		</div>
+		<div
+	</div>
+	<!-- end member popup page -->
+</body>
+</html>
