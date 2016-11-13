@@ -1,0 +1,18 @@
+{
+	"member": [{
+		"fullName": "Yoonkwan Kim",
+		"studentLogin": "kimyoonk",
+		"studentNumber": "991407965",
+		"studentPicture": "kwan.png"
+	}, {
+		"fullName": "Jody Kirton",
+		"studentLogin": "kirtonj",
+		"studentNumber": "991355155",
+		"studentPicture": "jody.png"
+	}, {
+		"fullName": "Nicole Serrao",
+		"studentLogin": "serraon",
+		"studentNumber": "991430686",
+		"studentPicture": "nicole.png"
+	}]
+}
