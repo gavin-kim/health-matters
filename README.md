@@ -4,18 +4,18 @@ a group project in Sheridan
 
 
 [ File locations ]
--For every one
-index.html
+-For every one<br>
+index.html<br>
 partial/main.html
 
--For kwan
-js/mineral.js
+-For kwan<br>
+js/mineral.js<br>
 partial/mineral-details.html
 
--For Nicole
-js/hospital.js
+-For Nicole<br>
+js/hospital.js<br>
 partial/hospital-details.html
 
--For Jody
-js/member.js
+-For Jody<br>
+js/member.js<br>
 partial/member-details.html
