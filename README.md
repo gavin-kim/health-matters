@@ -3,7 +3,7 @@ a group project in Sheridan
 
 
 
-[ File locations ]
+<strong>[ File locations ]</strong><br>
 -For every one<br>
 index.html<br>
 partial/main.html
