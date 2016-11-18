@@ -65,21 +65,21 @@ function initPageDetails(ev) {
 
 // load and save xml in local storage
 function loadXML() {
-    var item = localStorage.getItem("item");
+    var item = sessionStorage.getItem("item");
     return item ? new DOMParser().parseFromString(item, "text/xml") : null;
 }
 function saveXML(xml) {
-    localStorage.setItem("item", new XMLSerializer().serializeToString(xml));
+    sessionStorage.setItem("item", new XMLSerializer().serializeToString(xml));
 }
 
 // load and save JSON in local storage
 function loadJSON() {
-    var item = localStorage.getItem("item");
+    var item = sessionStorage.getItem("item");
     return item ? item : null;
 }
 
 function saveJSON(json) {
-    localStorage.setItem("item", JSON.stringify(json));
+    sessionStorage.setItem("item", JSON.stringify(json));
 }
 
 
