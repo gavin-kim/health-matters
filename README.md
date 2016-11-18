@@ -1,7 +1,5 @@
 # jquery-project
-a group project in Sheridan
-
-
+A group project for the mobile class
 
 <strong>[ File locations ]</strong><br>
 -For every one<br>
