@@ -63,7 +63,7 @@ function initPageDetails(ev) {
     }
 };
 
-// load and save xml in local storage
+// load and save xml in session storage
 function loadXML() {
     var item = sessionStorage.getItem("item");
     return item ? new DOMParser().parseFromString(item, "text/xml") : null;
@@ -72,7 +72,7 @@ function saveXML(xml) {
     sessionStorage.setItem("item", new XMLSerializer().serializeToString(xml));
 }
 
-// load and save JSON in local storage
+// load and save JSON in session storage
 function loadJSON() {
     var item = sessionStorage.getItem("item");
     return item ? item : null;
