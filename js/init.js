@@ -26,7 +26,7 @@ var MEMBER = {
     args: null
 };
 
-$(document).on("pagebeforeshow", "div[data-role = 'page']", initPageDetails);
+$(document).on("pagebeforeshow", ".details", initPageDetails);
 
 function initPageDetails(ev) {
 
@@ -63,7 +63,7 @@ function initPageDetails(ev) {
     }
 };
 
-// load and save xml in session storage
+// load and save xml in local storage
 function loadXML() {
     var item = sessionStorage.getItem("item");
     return item ? new DOMParser().parseFromString(item, "text/xml") : null;
@@ -72,7 +72,7 @@ function saveXML(xml) {
     sessionStorage.setItem("item", new XMLSerializer().serializeToString(xml));
 }
 
-// load and save JSON in session storage
+// load and save JSON in local storage
 function loadJSON() {
     var item = sessionStorage.getItem("item");
     return item ? item : null;
@@ -102,6 +102,20 @@ function loadHtml(url, func) {
     xhr.send();
 }
 
+function includeHtml(element) {
+
+    // find direct children only in the element
+    element.querySelectorAll(":scope > div[include]").forEach(function(dom) {
+
+        // find other children that have include attribute
+        includeHtml(dom);
+
+        loadHtml(dom.getAttribute("include"), function (ev) {
+            if (this.status == 200)
+                dom.innerHTML += this.response;
+        })
+    });
+};
 
 function init() {
 
@@ -116,13 +130,7 @@ function init() {
         }
     }
 
-    // to include external html files in a partial page
-    document.querySelectorAll("div[include]").forEach(function(dom) {
-        loadHtml(dom.getAttribute("include"), function(ev) {
-            if (this.status == 200)
-                dom.innerHTML = this.response;
-        });
-    });
+    includeHtml(document.body);
 
     // load data files
     $.ajax(MINERAL).done(initMineral);

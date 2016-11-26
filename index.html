@@ -23,29 +23,32 @@
 
 	<!-- Start main page -->
 	<div data-role="page" id="main" data-theme="a"
-		   include="partial/main.html"></div>
+		   include="partial/main.html">
+
+    <!-- For Jody -->
+    <!-- Start member popup page -->
+    <div data-role="popup" id="member-details" class="ui-content details"
+         data-position-to="window" data-overlay-theme="a" data-theme="a"
+         include="partial/member-details.html"></div>
+    <!-- end member popup page -->
+
+  </div>
 	<!-- End main page -->
 
 	<!-- For Yoonkwan -->
 	<!-- Start Mineral page-->
-	<div data-role="page" id="mineral-details"
+	<div data-role="page" id="mineral-details" class="details"
 			 include="partial/mineral-details.html"></div>
 	<!-- End Mineral page-->
 
 
 	<!-- For Nicole -->
 	<!-- Start Hospital page-->
-	<div data-role="page" id="hospital-details"
+	<div data-role="page" id="hospital-details" class="details"
 			 include="partial/hospital-details.html"></div>
 	<!-- End Hospital page-->
 
-
-	<!-- For Jody -->
-	<!-- Start member popup page -->
-	<div data-role="page" id="member-details"
-		   include="partial/member-details.html"></div>
-	<!-- end member popup page -->
-
+  
 	<script src="js/mineral.js"></script>
 	<script src="js/hospital.js"></script>
 	<script src="js/member.js"></script>
