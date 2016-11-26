@@ -1,3 +1,28 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+td{
+	width: 70%;
+}
+
+th, td {
+	text-align: left; 
+	padding:10px; 
+	background: white; 
+	font-size: 1.7em; 
+	font-weight: bold; 
+}
+
+.ui-icon-kwan:after {
+			background-image: url("../_img/kwan.jpg");
+			background-size: 25px 25px;
+}
+.ui-icon-jody:after {
+			background-image: url("../_img/jody.jpg");
+			background-size: 25px 25px;
+}
+.ui-icon-nicole:after {
+			background-image: url("../_img/nicole.jpg");
+			background-size: 25px 23px;
+}
