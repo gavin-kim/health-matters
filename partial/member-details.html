@@ -1,9 +1,16 @@
 <!-- member-details page -->
 
-<div data-role="header" data-theme="b">
-  <h1>Name of our site</h1>
-</div>
-<div class="ui-content" role="main" data-theme="b">
-  <p id="member-details"></p>
-  <p><a data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-top">Back to page</a></p>
-</div>
+	<header data-role="header" data-theme="b">
+		<h1>Member Details</h1>
+	</header>
+	<div class='ui-grid-a'>
+		<div class='ui-block-a' id='memberDetails'>
+			<table> 
+				<tr><th>Member Name:</th><td id="sName"></td></tr>
+				<tr><th>Student Login:</th><td id="sLog"></td></tr>
+				<tr><th>Student Number:</th><td id="sNum"></td></tr>
+			</table>
+		</div>	
+		<div class='ui-block-b' id='memberPic'></div>
+	</div>
+<p><a data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-top">Back to page</a></p>
