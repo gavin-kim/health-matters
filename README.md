@@ -1,5 +1,4 @@
 # jquery-project
-A group project for the mobile class
 
 <strong>TODO LIST:</strong>
 
@@ -9,7 +8,7 @@ A group project for the mobile class
 4. Change the link to the button in hospital-details.html.
 5. Import Google Map
 
-
+<br>
 <strong>[ File locations ]</strong><br>
 -For every one<br>
 index.html<br>
