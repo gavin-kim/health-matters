@@ -1,14 +1,14 @@
 # jquery-project
-A group project for the mobile class
 
-TODO LIST:
+<strong>TODO LIST:</strong>
 
 1. The name of Title
 2. Organize Text and Picture using CSS
-3. Hospital button.
-4. Import Google Map
+3. Make hospital button with some icon in main.html.
+4. Change the link to the button in hospital-details.html.
+5. Import Google Map
 
-
+<br>
 <strong>[ File locations ]</strong><br>
 -For every one<br>
 index.html<br>
