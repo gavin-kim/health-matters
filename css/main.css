@@ -14,6 +14,11 @@ th, td {
 	font-weight: bold; 
 }
 
+.centerD{
+    text-align: center;
+    margin: auto;
+}
+
 .ui-icon-kwan:after {
 			background-image: url("../_img/kwan.jpg");
 			background-size: 25px 25px;
