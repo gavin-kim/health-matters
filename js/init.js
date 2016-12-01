@@ -63,6 +63,8 @@ function initPageDetails(ev) {
     }
 };
 
+$(document).on("pageshow", "#hospital-details", initMap);
+
 // load and save xml in local storage
 function loadXML() {
     var item = sessionStorage.getItem("item");
