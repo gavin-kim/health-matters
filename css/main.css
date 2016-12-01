@@ -2,6 +2,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.centerD{
+    text-align: center;
+    margin: auto;
+}
+
+#memberPic{
+	width: 50%;
+	text-align: center;
+}
+
 td{
 	width: 70%;
 }
@@ -9,14 +19,8 @@ td{
 th, td {
 	text-align: left; 
 	padding:10px; 
-	background: white; 
-	font-size: 1.7em; 
+	background: white;
 	font-weight: bold; 
-}
-
-.centerD{
-    text-align: center;
-    margin: auto;
 }
 
 .ui-icon-kwan:after {
