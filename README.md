@@ -5,6 +5,7 @@
 1. The name of Title
 2. Both xml files look the same in context, use teacher one. Maybe delete other if not being used. 
 3. Google map to be focused in correct area
+4. Make popup pages have the same size
 
 <br>
 <strong>[ File locations ]</strong><br>
