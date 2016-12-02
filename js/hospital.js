@@ -45,7 +45,7 @@ function initHospitalDetails(hospital) {
 
     //header
     $("#hospName").html(
-        "<a href='" + hospital.url + "'>" +
+        "<a href='" + hospital.url + "' class='ui-btn ui-icon-heart ui-nodisc-icon ui-btn-corner-all ui-btn-icon-left'>" +
         hospital.name +
         "</a>"
     );
