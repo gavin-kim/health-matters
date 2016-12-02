@@ -4,7 +4,7 @@
 		"city": "Toronto",
 		"url": "http://www.uhn.ca/corporate/AboutUHN/OurHospitals/TGH",
 		"mainPhoneNumber": "416-340-3111",
-		"longitude": "79.3890",
+		"longitude": "-79.3890",
 		"latitude": "43.6582",
 		"departments": [{
 			"departmentName": "Emergency Department",
