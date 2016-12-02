@@ -1,8 +1,10 @@
 <!-- hospital-details page -->
 
-<div data-role="header" data-theme="b" id="hospitalHeader">
-  <h1>Hospital details</h1>
-</div>
+<header data-role="header" class="header">
+  <h1>Name of our site</h1>
+  <a href="#main" class="ui-btn ui-icon-back ui-btn-icon-notext back-button ui-nodisc-icon"></a>
+</header>
+
 <div class="ui-content centerD"  role="main" data-theme="b">
   <h2 id='hospName'></h2>
   <div class='centerD'>
@@ -14,9 +16,15 @@
    
     <section id="summHosp" data-mini="true" data-role="collapsible-set">
     </section>
-  
   </div>
-  <div>
-    <a data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-top">Back to page</a>
+</div>
+
+<div data-role="footer" data-position="fixed">
+  <div data-role="navbar" class="ui-navbar">
+    <ul>
+      <li><a href="#member-details" data-rel="popup" class="ui-btn ui-icon-kwan ui-btn-icon-left nav-member" value="0">Kwan</a></li>
+      <li><a href="#member-details" data-rel="popup" class="ui-btn ui-icon-jody ui-btn-icon-left nav-member" value="1">Jody</a></li>
+      <li><a href="#member-details" data-rel="popup" class="ui-btn ui-icon-nicole ui-btn-icon-left nav-member" value="2">Nicole</a></li>
+    </ul>
   </div>
 </div>

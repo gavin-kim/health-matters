@@ -36,6 +36,8 @@ function initMineralDetails(item) {
     $("#mineral-details-header")
         .html("<h1>" + $(item).find("phrase").text() +"</h1>");
 
+    $("#mineral-details-img").attr("src", $(item).find("image").text());
+
     $("#mineral-details-info")
         .html($(item).find("meaning").text());
 }
