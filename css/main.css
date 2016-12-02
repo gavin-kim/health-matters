@@ -7,9 +7,17 @@ body {
     margin: auto;
 }
 
+#hospitalHeader{
+	background-color: #819b89;
+}
+
 #memberPic{
 	width: 50%;
 	text-align: center;
+}
+
+#mineral-details-header{
+	background-color: #819b89;
 }
 
 td{
