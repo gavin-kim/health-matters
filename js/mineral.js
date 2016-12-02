@@ -1,3 +1,8 @@
+/*
+    Group Project - Health Matters!
+    Student Names: Yoonkwan Kim, Jody Kirton, Nicole Serrao
+*/
+
 "use strict";
 
 // data object : data.mineral
