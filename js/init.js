@@ -43,8 +43,8 @@ function initPageDetails(ev) {
             } else {
                 initMineralDetails(loadXML());
             }
-
             break;
+            
         case "hospital-details":
 
             if (HOSPITAL.clickEvent) {
@@ -53,8 +53,8 @@ function initPageDetails(ev) {
             } else {
                 initHospitalDetails(loadJSON());
             }
-
             break;
+            
         case "member-details":
 
             if (MEMBER.clickEvent) {
@@ -67,9 +67,7 @@ function initPageDetails(ev) {
     }
 };
 
-$(document).on("pageshow", "#hospital-details", initMap);
-
-// load and save xml in local storage
+// load and save xml in session storage
 function loadXML() {
     var item = sessionStorage.getItem("item");
     return item ? new DOMParser().parseFromString(item, "text/xml") : null;
@@ -135,7 +133,9 @@ function init() {
             }
         }
     }
-
+    
+    $(document).on("pageshow", "#hospital-details", initMap);
+    
     includeHtml(document.body);
 
     // load data files
